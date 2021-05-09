@@ -1,0 +1,373 @@
+.info{
+    background: #c9c1ac;
+}
+
+
+body{
+    font-family: 'Mr Dafoe', cursive;
+    color: #c9c9c9;
+    background: url(../img/body-bcg.jpeg)center/cover fixed no-repeat;
+}
+
+.primary-color{
+    color: #d3325f;
+}
+.info h2{
+    word-spacing: 0.6rem;
+}
+
+.info a{
+    transition: all 2s ease-in-out;
+}
+.info a:hover{
+    color: #242424;
+}
+
+/* header */
+ 
+#header{
+    /* min-height: calc(100vh - 94px); */
+    background: radial-gradient(rgba(0,0,0,.5),rgba(0,0,0,0.5)), url(../img/banner-bcg.jpeg) center/cover fixed no-repeat ;
+    position: relative;
+}
+
+
+.hieght-90{
+    min-height: calc(100vh - 94px);
+}
+
+.banner h1{
+    border-top: dotted 6px #c9c9c9;
+    border-bottom: dotted 6px #c9c9c9;
+    animation: fromleft 4s;
+}
+
+
+@keyframes fromleft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(30px);
+        
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes fromright{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-30px);
+        
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+/* navbar */
+.navbar{
+    background-color: #c9c1ac;
+    padding: 20px;
+    transition: all 1s ease-in;
+}
+.navbar-background{
+    padding: 5px 20px;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    transition: ease-in all 1s;
+}
+.navbar-brand:hover{
+    color: #242424;
+}
+
+
+.nav-link{
+    font-size: 23px;
+    color: #242424;
+    text-decoration: none;
+    transition: all 1s ease-in;
+}
+
+.nav-link:hover{
+    color: #d3325f;
+}
+
+.nav-btn{
+    background: transparent;
+    color: #d3325f;
+    border: 2px solid #d3325f;
+    font-size: 23px;
+    transition: ease-in all 1s;
+}
+
+.nav-btn:hover{
+    color: #242424;
+    border: 2px solid #242424;
+    transform: rotate(10deg);
+}
+
+
+.toggler-btn{
+    border: 2px solid #d3325f;
+    padding: 5px;
+    transition: all ease-in 1s;
+}
+
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: #d3325f;
+    transition: all .5s ease-in;
+}
+
+.changes .bar1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.changes .bar2{
+    opacity: 0;
+}
+.changes .bar3{
+    transform: rotate(45deg) translate(-5px,-8px);
+}
+
+
+
+
+.main-btn{
+   color: #d3325f;
+   font-size: 2rem;
+   border: #d3325f solid 2px;
+   transition: ease-in-out 1s all;
+    animation: fromright 4s;
+}
+
+.main-btn:hover{
+    background: #c9c1ac;
+    color: #242424;
+    border: solid 2px #c9c1ac;
+   
+}
+
+
+@keyframes bottonform{
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+
+.header-link {
+ 
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background: #c9c1ac;
+    border-radius: 10px;
+    transition: 2s all ease-in;
+    animation: bottonform 4s infinite;
+}
+
+.header-link:hover{
+     color: #242424;
+}
+
+/* header end */
+
+/* menu item */
+.item-container{
+    position: relative;
+    overflow: hidden;
+    transition: 2s all ease-in;
+
+}
+
+.item-img{
+    transition: 2s all ease-in;
+}
+
+.item-container:hover .item-img{
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.item-link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #d3325f;
+    font-size: 2rem;
+    border-bottom: #d3325f solid 3px;
+    border-top: #d3325f solid 3px;
+    transition: all 2s ease-in;
+    opacity: 0;
+}
+
+.item-container:hover .item-link{
+    opacity: 1;
+}
+
+.item-link:hover{
+    color: #c9c9c9;
+    border: #c9c1ac solid 2px;
+    background-color: #c9c1ac;
+    color: #242424;
+}
+
+.item-container:hover{
+    outline: solid 10px #d3325f;
+    outline-offset: -0.8rem;
+}
+
+/* menu item */
+
+/* menu */
+
+#menu{
+    background:linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)) ,url(../img/banner-bcg.jpeg)center/cover fixed no-repeat;
+}
+
+.special{
+    border: 3px solid #d3325f;
+    position: relative;
+}
+
+.special-text{
+    position: absolute;
+    top: 0;
+    right: 15%;
+    background: #d3325f;
+    padding: 0 0.4rem ; 
+}
+
+/* about */
+
+
+.about-picture{
+    position: relative;
+
+}
+
+.about-amage{
+    position: absolute;
+    width: 150px;
+    transition: all 2s ease-in;
+    opacity: .9;
+}
+
+.img-1{
+    left: 0%;
+    top: 0%;
+}
+.img-2{
+    left: 20%;
+    top:20%;
+    z-index: 10;
+}
+.img-3{
+    left: 45%;
+    top: 40%;
+    z-index: 20;
+}
+.img-4{
+    left: 40%;
+    top: 0%;
+}
+.img-5{
+    left: 0%;
+    top: 45%;
+}
+
+.about-amage:hover{
+    outline: solid 10px #d3325f;
+    outline-offset: 0.8rem;
+    transform: scale(1.3) rotate(20deg);
+    z-index: 30;
+    opacity: 1;
+}
+
+/* review */
+
+
+.review-item{
+    background: rgba(255,255,255,0.7);
+    clip-path: polygon(0% 0%, 85% 0, 100% 100%, 78% 100%, 68% 100%, 47% 100%, 1% 100%);
+}
+
+.review-img{
+    width: 150px;
+}
+
+.team-icon a{
+    color: #3b5998;
+    transition: all 1s ease-in;
+}
+
+.team-icon a:hover{
+      transform: translateY(-5px);
+      color: #242424;
+}
+
+/* section */
+
+#section .card{
+    background: rgba(0,0,0,0.5);
+    transition: all 1s ease-in;
+}
+
+#section .card:hover{
+    background: rgba(0,0,0,0.8);
+}
+
+.input-group-text{
+    background: #d3325f;
+}
+
+
+.contact-btn{
+    background: transparent;
+    color: #d3325f;
+    border-color: #d3325f;
+    transition: all 1.5s ease-in;
+}
+
+.contact-btn:hover{
+    background: #c9c1ac;
+    color: #242424;
+}
+
+/* footer */
+
+#back-to-top{
+    background: #c9c1ac;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.scrollTop{
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+}
